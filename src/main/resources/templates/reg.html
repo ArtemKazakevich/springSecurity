@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorization</title>
+</head>
+<body>
+Add new user:
+
+<!-- Сюда вставить сообщение, которое будет выводится, если user уже есть в системе-->
+
+<div>
+    <form method="post" action="/auth/reg">
+        <h2>Login</h2>
+        <p>
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+        </p>
+        <p>
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </p>
+        <button type="submit">Sign in</button>
+    </form>
+</div>
+</body>
+</html>
